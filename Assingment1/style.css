@@ -1,0 +1,289 @@
+ *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter', sans-serif;
+  background:#f3efeb;
+  overflow-x:hidden;
+  color:#222;
+}
+ 
+.container{
+  width:100%;
+  min-height:100vh;
+  position:relative;
+  padding:30px 60px;
+}
+
+.navbar{
+  width:100%;
+  height:70px;
+  position:relative;
+}
+
+.logo{
+  position:absolute;
+  /* left:0;
+  top:0; */
+  font-size:42px;
+  font-family:'Playfair Display', serif;
+  font-weight:600;
+}
+
+.nav-links{
+  position:absolute;
+  left:50%;
+  top:15px;
+  transform:translateX(-50%);
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#333;
+  margin:0 22px;
+  font-size:15px;
+  position:relative;
+}
+
+.nav-links a.active::after{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:2px;
+  background:#000;
+  left:0;
+  bottom:-8px;
+}
+
+.nav-icons{
+  position:absolute;
+  right:0;
+  top:10px;
+  font-size:26px;
+}
+
+.left-content{
+  position:absolute;
+  left:60px;
+  top:150px;
+  width:420px;
+}
+
+.tag{
+  font-size:14px;
+  letter-spacing:2px;
+  color:#666;
+  margin-bottom:25px;
+}
+
+.title{
+  font-family:'Playfair Display', serif;
+  font-size:78px;
+  line-height:0.95;
+  font-weight:500;
+  margin-bottom:28px;
+}
+
+.description{
+  color:#666;
+  font-size:14px;
+  line-height:1.8;
+  width:340px;
+  margin-bottom:28px;
+}
+
+.colors{
+  position:absolute;
+  height:40px;
+  margin-bottom:25px;
+}
+ 
+
+.colors span{
+  position:absolute;
+  width:18px;
+  height:18px;
+  border-radius:50%;
+}
+
+.c1{
+  margin-left: 100px;
+  background:#2e2e2e;
+  left:0;
+}
+
+.c2{
+  margin-left: 100px;
+  background:#d3b8aa;
+  left:35px;
+}
+
+.c3{
+  margin-left: 100px;
+  background:#d6d6c9;
+  left:70px;
+}
+
+.c4{
+  margin-left: 100px;
+  background:#d9a2a2;
+  left:105px;
+}
+
+.details-title{
+  margin-top: 70px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.small-text{
+  color:#777;
+  font-size:13px;
+  line-height:1.7;
+  width:340px;
+}
+ 
+.hero-section{
+  position:absolute;
+  left:520px;
+  top:120px;
+  width:620px;
+  height:520px;
+}
+
+.image-box{
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:20px;
+  overflow:hidden;
+  background:#ddd;
+}
+
+.image-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.price-tag{
+  position:absolute;
+  top:18px;
+  left:18px;
+  background:white;
+  padding:10px 18px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  z-index:10;
+}
+
+.rating{
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:white;
+  padding:10px 16px;
+  border-radius:30px;
+  font-size:13px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  z-index:10;
+}
+
+.vertical-text{
+  position:absolute;
+  left:-70px;
+  top:180px;
+  transform:rotate(180deg);
+  font-size:30px;
+  font-family:'Playfair Display', serif;
+  color:#444;
+  letter-spacing:2px;
+  writing-mode: vertical-rl;
+}
+ 
+
+.bag-btn{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  background:rgba(50,50,50,0.75);
+  backdrop-filter:blur(3px);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  font-size:14px;
+  z-index:10;
+}
+
+.bag-btn span{
+  font-size:28px;
+  margin-bottom:8px;
+}
+ 
+.thumbnails{
+  position:absolute;
+  right:-110px;
+  top:30px;
+  width:90px;
+}
+
+.thumb{
+  position:relative;
+  width:90px;
+  height:90px;
+  border-radius:18px;
+  overflow:hidden;
+  margin-bottom:18px;
+  background:white;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.features{
+  position:absolute;
+  bottom:30px;
+  left:60px;
+  width:90%;
+  height:90px;
+  background:white;
+  border-radius:22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.feature-item{
+  text-align:center;
+  position:relative;
+}
+
+.feature-item h4{
+  font-size:15px;
+  margin-top:8px;
+}
+
+.feature-item p{
+  font-size:12px;
+  color:#777;
+  margin-top:4px;
+}
+
+.icon{
+  font-size:22px;
+}
