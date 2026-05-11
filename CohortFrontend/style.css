@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+    padding: 30px 60px;
+}
+
+ 
+ 
+
+ 
+.navbar{
+    margin-left: 35%;
+    display: flex;
+   justify-content: space-between;
+   align-items:center;
+}
+
+ 
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+ .btn{
+    margin-left: 65%;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    background:#111;
+    color: white;
+    cursor:pointer;
+}  
+
+.main{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.main h1{
+    font-size: 120px;
+    font-weight: 800;
+}
+
+.categories{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categories button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}  
+
+.categories .active{
+    background: orangered;
+}
+
+.blogs{
+    margin-top:70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.card{
+    background: #000;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 30px;
+}
+
+.content{
+    padding: 25px;
+}
+
+.content span{
+    background-color:#351400;
+    color: orange;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.content h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.content p{
+    margin-top: 10px;
+    color: grey;
+}
+
+
+.card img{
+  transform: translateY(0px);
+}
